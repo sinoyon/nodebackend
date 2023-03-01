@@ -1,0 +1,84 @@
+{
+  "name": "startupswalletbackend",
+  "version": "1.0.0",
+  "description": "Startupswallet Backend script",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertocaiazzo1/startupswalletBE.git"
+  },
+  "keywords": [
+    "startupswalletbe"
+  ],
+  "author": "Zhijia Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertocaiazzo1/startupswalletBE/issues"
+  },
+  "homepage": "https://github.com/robertocaiazzo1/startupswalletBE#readme",
+  "dependencies": {
+    "aws": "0.0.3-2",
+    "aws-sdk": "2.817.0",
+    "axios": "0.21.4",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "bcryptjs": "2.4.3",
+    "bluebird": "3.7.2",
+    "body-parser": "1.19.0",
+    "composable-middleware": "0.3.0",
+    "compression": "1.7.4",
+    "connect-mongo": "3.2.0",
+    "cookie-parser": "1.4.5",
+    "cors": "2.8.5",
+    "cron": "1.8.2",
+    "errorhandler": "1.5.1",
+    "express": "4.17.3",
+    "express-fileupload": "1.2.0",
+    "express-jwt": "6.0.0",
+    "express-session": "1.17.1",
+    "express-validator": "6.6.1",
+    "got": "11.8.5",
+    "jsonwebtoken": "9.0.0",
+    "jwks-rsa": "2.0.5",
+    "lodash": "4.17.21",
+    "lusca": "1.6.1",
+    "method-override": "3.0.0",
+    "moment": "2.29.4",
+    "mongoose": "5.13.15",
+    "mongoose-lean-defaults": "2.1.0",
+    "morgan": "1.10.0",
+    "object-path": "0.11.8",
+    "onesignal-node": "3.3.0",
+    "passport": "0.6.0",
+    "passport-jwt": "4.0.0",
+    "passport-local": "1.0.0",
+    "replace-ext": "2.0.0",
+    "request-ip": "2.1.3",
+    "rxjs": "6.6.3",
+    "sharp": "0.30.7",
+    "socket.io": "3.1.2",
+    "socketio-jwt": "4.5.0",
+    "validator": "13.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-preset-es2015": "6.24.1",
+    "babel-register": "6.26.0",
+    "nodemon": "2.0.3"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "scripts": {
+    "start": "npm run server:run",
+    "start:prod": "npm run server:prod",
+    "server:run": "nodemon",
+    "server:prod": "node ./index ",
+    "generate-templates": "node ./ses-templates/generate-templates",
+    "update-templates": "node ./ses-templates/update-templates"
+  }
+}
